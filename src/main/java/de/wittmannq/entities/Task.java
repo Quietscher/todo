@@ -19,6 +19,16 @@ public class Task {
     @GeneratedValue
     private Long id;
 
+    public Task() {
+    }
+
+    public Task(String description, boolean completed, LocalDateTime createdAt, Long id) {
+        this.description = description;
+        this.completed = completed;
+        this.createdAt = createdAt;
+        this.id = id;
+    }
+
     public String getDescription() {
         return description;
     }

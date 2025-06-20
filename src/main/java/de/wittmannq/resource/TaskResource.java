@@ -22,7 +22,7 @@ public class TaskResource {
     TaskRepository taskRepository;
 
     @GET
-    public List<Task> getMyTasks() {
+    public List<Task> getTasks() {
         return taskRepository.listAll();
     }
 
